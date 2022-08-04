@@ -1,0 +1,59 @@
+<!-- BAD Examples of representing drug description -->
+
+<!-- Example 1 -->
+<MedicationPrescribed>
+ <DrugDescription>NIFEdipine (ADALAT CC/PROCARDIA XL) 60 mg SR tablet</DrugDescription>
+ <DrugCoded>
+ <ProductCode>54868453100</ProductCode>
+ <ProductCodeQualifier>ND</ProductCodeQualifier>
+ </DrugCoded>
+
+<!-- Example 2 -->
+<MedicationPrescribed>
+ <DrugDescription>potassium chloride (K-DUR, KLORCON) 10 mEq sustained release tablet</DrugDescription>
+ <DrugCoded>
+ <ProductCode>62037071001</ProductCode>
+ <ProductCodeQualifier>ND</ProductCodeQualifier>
+ </DrugCoded>
+ 
+<!-- GOOD Examples of representing drug description -->
+
+<!-- Example 1 - If the Adalat brand was intended -->
+<MedicationPrescribed>
+ <DrugDescription>ADALAT CC 30 MG TABLET</DrugDescription>
+<DrugCoded>
+<ProductCode>00085170102</ProductCode> <!-- this is the NDC-->
+<ProductCodeQualifier>ND</ProductCodeQualifier>
+<DrugDBCode>672916</DrugDBCode> <!-- this is the RxNorm code-->
+<DrugDBCodeQualifier>SBD</DrugDBCodeQualifier> <!-- this is an RxNorm Term Type of the Branded Drug Component-->
+ </DrugCoded>
+
+<!-- Example 1 If the generic was intended-->
+<MedicationPrescribed>
+ <DrugDescription>NIFEDIPINE ER 30 MG TABLET </DrugDescription>
+ <DrugCoded>
+ <ProductCode>00093205701 </ProductCode>
+ <ProductCodeQualifier>ND</ProductCodeQualifier>
+ <DrugDBCode>198034</DrugDBCode>
+ <DrugDBCodeQualifier>SCD</DrugDBCodeQualifier>
+ </DrugCoded>
+
+<!-- Example 2 If the Klor-Con brand was intended:-->
+<MedicationPrescribed>
+<DrugDescription>KLOR-CON 10 MEQ TABLET</DrugDescription>
+<DrugCoded>
+<ProductCode>00245004101</ProductCode>
+<ProductCodeQualifier>ND</ProductCodeQualifier>
+<DrugDBCode>628958</DrugDBCode>
+<DrugDBCodeQualifier>SBD</DrugDBCodeQualifier>
+</DrugCoded>
+
+<!-- Example 2 If the generic was intended:-->
+<MedicationPrescribed>
+<DrugDescription>POTASSIUM CL ER 10 MEQ TABLET </DrugDescription>
+<DrugCoded>
+<ProductCode>00781571001</ProductCode>
+<ProductCodeQualifier>ND</ProductCodeQualifier>
+<DrugDBCode>628953</DrugDBCode>
+<DrugDBCodeQualifier>SBD</DrugDBCodeQualifier>
+</DrugCoded>
